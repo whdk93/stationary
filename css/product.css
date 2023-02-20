@@ -1,0 +1,232 @@
+/* 기본 디자인 */
+.hidden {
+    position: absolute;
+    height: 0;
+    text-indent: -99999px;
+}
+#contentArea .focus a{
+    background-color: #fff;
+    border: 1px solid;
+    border-bottom: 1px solid white;
+    color: #555;
+}
+#contentArea>div {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 상품 디테일 옵션 영역 시작 */
+#prodOptionArea {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+.location {
+    position: relative;
+    height : 15px;
+    line-height: 15px;
+    text-align: right;
+    padding: 10px 0;
+    margin: 20px 0 30px;
+    text-transform: uppercase;
+}
+#prodOptionArea>div {
+    float: left;
+}
+.prodThumb {
+    width: 700px;
+    text-align: center;
+}
+/* 제품 썸네일 이미지 영역 */
+.prodThumb>img {
+    width: 400px;
+}
+.thumbList {
+    width: 500px;
+}
+/* 상품 주문 옵션 영역 */
+.prodInfo {
+    width: 400px;
+    margin-left: 100px;
+}
+.prodInfo h2 {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.infoOption { 
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+.infoOption li:first-of-type {
+    border-bottom: 1px solid #ccc;
+}
+.infoOption span {
+    display: inline-block;
+    width: 100px;
+    padding: 15px 0;
+}
+.infoOption .linethrough {
+    color: #ccc;
+    text-decoration: line-through;
+}
+/* 주문 상품 체크 영역 */
+#orderList {
+    position: relative;
+}
+#orderList .orderprod {
+    overflow: hidden;
+}
+#orderList .delete {
+    float: right;
+    margin-bottom: 20px;
+    width: 25px;
+    height: 25px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+#orderList .orderListDetail {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+#orderList .orderListDetail input {
+    margin-right: 10px;
+}
+#orderList .orderListDetail button {
+    width: 25px;
+    height: 25px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+}
+#orderList .orderListDetail span{
+    float: right;
+}
+#orderList p {
+    text-align: right;
+}
+#orderList p span {
+    display: inline-block;
+    padding: 20px 0;
+    margin-left: 20px;
+    font-size: 1.3em;
+}
+.orderbtn {
+    margin-bottom: 20px;
+}
+.orderbtn button {
+    width: 30%;
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: linear-gradient(to bottom,#555 50%,#7a7a7a);
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+}
+/* 상품 디테일 옵션 영역 종료 */
+/* 상품 정보 영역 시작*/
+#prodDetailArea {
+    text-align: center;
+    padding-top: 30px;
+}
+.navDetail ul{
+    position: relative;
+    width: 1200px;
+    font-size: 0;
+}
+.navDetail ul li {
+    display: inline-block;
+}
+.navDetail ul li a {
+    display: inline-block;
+    width: 120px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    font-size: 12px;
+    color: #666;
+}
+.prodDetailImg {
+    position: relative;
+    width: 1200px;
+    border-top: 1px solid #555;
+}
+/* 상품 정보 영역 종료 */
+/* 상품구매안내 영역 시작 */
+#prodTerms {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+.termsDetail {
+    border-top: 1px solid #555;
+    text-align: center;
+}
+.termBox {
+    width: 1000px;
+    margin: 20px 10px 20px 50px;
+    padding: 0 49px;
+    border: 1px solid #eee;
+    background-color: #f5f5f5;
+}
+.termBox h3 {
+    padding: 10px 0;
+    font-size: 1.5em;
+}
+.termBox p {
+    line-height: 1.8em;
+}
+/* 상품구매안내 영역 종료 */
+/* 상품후기 영역 시작 */
+#prodReview {
+    position: relative;
+}
+.reviewList {
+    border-top: 1px solid #555;
+}
+.reviewList p {
+    margin: 20px 0;
+    padding: 20px 0;
+    border: 1px solid #555;
+}
+#prodReview .reviewBtn {
+    position: relative;
+    margin-left: 1100px;
+    
+    margin-bottom: 10px;
+    display: inline-block;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 5px 3px;
+    background-color: #7a7a7a;
+    color: #fafafa;
+    text-shadow: 1px 1px 1px #555, -1px -1px 1px #555;
+}
+/* 상품후기 영역 종료 */
+
+/* 상품문의 영역 시작 */
+#prodQnA {
+    margin-bottom: 20px;
+}
+.qnaList {
+    border-top: 1px solid #555;
+}
+.qnaList p {
+    margin: 20px 0;
+    padding: 20px 0;
+    border: 1px solid #555;
+}
+#prodQnA>a {
+    position: relative;
+    margin-left: 1100px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 5px 3px;
+    background-color: #7a7a7a;
+    color: #fafafa;
+    text-shadow: 1px 1px 1px #555, -1px -1px 1px #555;    
+}
+/* 상품문의 영역 종료 */

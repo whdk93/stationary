@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/product.css">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/product.js"></script>
+    <script src="https://kit.fontawesome.com/3391129e8e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- 퀵메뉴 영역 시작 -->
+    <!-- 퀵메뉴(오늘 본 상품) -->
+    <div id="quickMenu">
+        <div class="quick_prod">
+        <a href="#"><img src="img/century_nice_lavande.jpg" alt="century lavande"></a>
+        <a href="#"><img src="img/pelikan_apatite.jpg" alt="pelikan apatite"></a>
+        <a href="#"><img src="img/sailor_overthostorm.jpg" alt="sailor over the storm"></a>
+        </div>
+        <div class="quick_btn">
+            <a href="#" class="quick_up"><i class="fa-solid fa-angle-up"></i><span>up</span></a>
+            <a href="#" class="quick_down"><i class="fa-solid fa-angle-down"></i><span>down</span></a>
+        </div>
+    </div>
+    <!-- 퀵메뉴(맨위로,홈으로,장바구니) -->
+    <div id="topMenu">
+        <a href="#head_top" class="top top1"><i class="fa-solid fa-angles-up"></i><span>top</span></a>
+        <a href="index.html" class="top top2"><i class="fa-solid fa-house"></i><span>home</span></a>
+        <a href="#" class="top top3"><i class="fa-solid fa-cart-shopping"></i><span>cart</span></a>
+    </div>
+    <!-- 퀵메뉴 영역 종료 -->
+    <!-- 헤더 영역 시작 -->
+    <header id="head_top">
+        <!-- gnb 영역 -->
+        <div id="gnb">
+            <!-- 상단메뉴 -->
+            <ul>
+                <li><a href="#">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="#">장바구니</a></li>
+                <li><a href="#">마이페이지</a></li>
+            </ul>  
+            <!-- 검색 영역 -->
+        <form action="#" method="get">
+            <fieldset>
+                <legend>검색</legend>
+                <input type="search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </fieldset>
+        </form>
+        </div>
+        <!-- 메인 배너 영역 -->
+        <div id="mainBanner">
+            <h1><a href="index.html"><img src="img/indexLogo.png" alt="sitelogo">GIROKHADA</a></h1>
+        </div>
+        <!-- 메인 메뉴 영역 -->
+        <div id="mainMenuArea">
+            <nav class="mainNav">
+                <h2>메인메뉴</h2>
+                <p><a href="">브랜드</a></p>
+                <ul class="mainMenu">
+                    <li>
+                        <a href="#">필기구</a>
+                        <ul class="subMenu sub1">
+                            <li><a href="#">만년필</a></li>
+                            <li><a href="#">볼펜</a></li>
+                            <li><a href="#">샤프</a></li>
+                            <li><a href="#">딥펜</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">잉크</a>
+                        <ul class="subMenu sub2">
+                            <li><a href="#">컬러차트</a></li>
+                            <li><a href="#">병잉크</a></li>
+                            <li><a href="#">카트리지</a></li>
+                            <li><a href="#">소분잉크</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">노트 및 잡화</a>
+                        <ul class="subMenu sub3">
+                            <li><a href="#">노트</a></li>
+                            <li><a href="#">연습지</a></li>
+                            <li><a href="#">파우치</a></li>
+                            <li><a href="#">기타</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">에디터's Pick</a>
+                        <ul class="subMenu sub4">
+                            <li><a href="#">new&amp;best</a></li>
+                            <li><a href="#">만년필 입문</a></li>
+                            <li><a href="#">금액대별 만년필</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">Q&amp;A</a></li>
+                </ul>
+            </nav>    
+        </div>
+    </header>
+    <!-- 헤더 영역 종료 -->
+    <!-- 컨텐츠 영역 시작 -->
+    <div id="contentArea">
+        <!-- 상품 디테일 및 옵션 선택 -->
+        <div id="prodOptionArea">
+            <p class="location">home &gt; new arrivals &gt; <strong>만년필</strong></p>
+            <!-- 상품 상단 정보 -->
+            <!-- 상품 이미지 영역 -->
+            <div class="prodThumb">
+                <img src="img/century_nice_lavande.jpg" alt="센츄리니스라벤더">
+                <!-- <ul class="thumbList">
+                    <li><img src="img/century_nice_lavande.jpg" alt="" width="100"></li>
+                </ul> -->
+            </div>
+            <!-- 상품 옵션 영역 -->
+            <div class="prodInfo">
+                <h2>플래티넘 센츄리 #3776 니스 라벤더</h2>
+                <ul class="infoOption">
+                    <li class="commas"><span>판매가</span>190000원</li>
+                    <li class="commas"><span>소비자가</span><strong class="linethrough">300000원</strong></li>
+                    <li><span>제조사</span>플래티넘</li>
+                    <li>
+                        <span>배송비</span>
+                        <select name="deliveryfee" id="deliveryfee">
+                            <option value="3000">주문시 결제(선결제)</option>
+                            <option value="0">수령시 결제(착불)</option>
+                        </select>
+                    </li>
+                    <li><span>옵션선택</span>
+                        <select name="tipsize" id="tipsize">
+                            <option value="0">옵션을 선택하세요</option>
+                            <option value="190000">EF닙</option>
+                            <option value="190000">F닙</option>
+                            <option value="190000">M닙</option>
+                            <option value="190000">B닙</option>
+                        </select>
+                    </li>
+                </ul>
+                <div id="orderList">
+                    <div class="orderprod">
+                        <button class="delete"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="orderListDetail">
+                        <input type="text" id="quantity" size="1" value="0">
+                        <button class="plus quanBtn"><i class="fa-solid fa-plus"></i></button>
+                        <button class="minus quanBtn"><i class="fa-solid fa-minus"></i></button>
+                        <span class="quanPrice">190000원</span>
+                    </div>
+                    <p class="totalPrice">총 상품 금액<span class="commas">0원</span></p>
+                </div>
+                <div class="orderbtn">
+                    <button type="submit">바로 구매</button>
+                    <button type="submit">찜하기</button>
+                    <button type="submit">장바구니</button>
+                </div>
+            </div>    
+        </div>
+        <!-- 상품 정보 영역-->
+        <div id="prodDetailArea">
+            <!-- 상품 디테일 이미지 -->
+            <div>
+                <h2 class="hidden">상품상세정보</h2>
+                <nav class="navDetail">
+                    <ul>
+                        <li class="focus"><a href="#prodDetailArea">상품상세정보</a></li>
+                        <li><a href="#prodTerms">상품구매안내</a></li>
+                        <li><a href="#prodReview">상품후기</a></li>
+                        <li><a href="#prodQnA">상품문의</a></li>
+                    </ul>
+                </nav>
+                <div class="prodDetailImg">
+                    <img class="detailImg" src="img/PNB_20000R_87.jpg" alt="">
+                </div>
+            </div>
+            <!-- 상품구매안내 -->
+            <div id="prodTerms">
+                <h2 class="hidden">상품구매안내</h2>
+                <nav class="navDetail">
+                    <ul>
+                        <li><a href="#prodDetailArea">상품상세정보</a></li>
+                        <li class="focus"><a href="#prodTerms">상품구매안내</a></li>
+                        <li><a href="#prodReview">상품후기</a></li>
+                        <li><a href="#prodQnA">상품문의</a></li>
+                    </ul>
+                </nav>
+                <div class="termsDetail">
+                    <div class="termBox">
+                        <h3>배송 안내</h3>
+                        <p>- 한진택배 (1588-0011)를 이용하여 발송되고 있습니다.
+                            군부대 등 일반 택배가 발송되지 않는 곳은 주문 시 주소지를 꼭 확인하시고 변경 부탁드립니다.(이로 인한 배송 문제는 책임지지 않습니다.)<br>
+                            - 기본 배송 운임료는 3,000원입니다.
+                            단, 6만 원 이상 구매 시 무료배송이며, 배송비가 제외되는 품목도 있습니다. (제주도, 도서 산간 지역의 경우 추가 운임이 발생될 수 있습니다.)<br>
+                            - 상품 발송 처리가 완료된 시점에서 1~2일 정도 소요되며, 공휴일이나 주말일 경우 소요 일이 늘어날 수 있습니다.
+                            발송 처리는 매일 오후 5시~6시에 일괄 처리되므로 배송추적, 송장번호 확인 등 그 이후에 확인이 가능합니다.<br>
+                            - 영업일 오후 1시까지 결제 확인된 주문 건은 보유 중인 재고에 한 해 당일 발송될 예정입니다.
+                            단, 주문 건의 품목이 품절일 경우, 해당 품목이 당사에 재입고 된 후 영업일 1~3일 안에 발송될 예정입니다.
+                            (품절 품목의 재입고 시기는 수입사와 택배사 사정에 따라 변동되며, 재입고 여부 및 시기는 확인 후 고객님께 전화 또는 문자로 안내됩니다.)</p>
+                        <h3>교환 및 반품 안내</h3>
+                        <p>-교환 및 반품은 상품 수령 후 7일 이내 고객센터 또는 게시판을 통해 접수 부탁드립니다.<br>
+                            - 변심에 의한 교환 및 반품은 왕복 택배비 6,000원이 부과됩니다.<br>
+                            - 부과되는 택배비는 동봉하시거나 고객센터로 연락 후 계좌번호로 입금하시면 가능합니다.<br>
+                            - 직접 보내실 경우 사유와 함께 3,000원을 동봉하여 선불 택배로 보내주시면 가능합니다. (착불일 경우 비용이 추가로 발생됩니다.)</p>  
+                        <h3>A/S 정책</h3>
+                        <p>- A/S는 당사에서 구매한 제품에 한해 진행되며, 브랜드나 상황에 따라 A/S가 불가능할 수 있습니다.<br>
+                            - 원칙적으로 수입 및 제조사가 있는 경우 해당 브랜드 A/S 센터를 통해 진행되고 있습니다.<br>
+                            - 브랜드 A/S 센터에서 불가능한 경우 당사(기록하다)에서 가능하다고 판단된 경우에만 A/S가 가능합니다.<br>
+                            - A/S 기간은 브랜드나 현재 상태 , 진행 상황에 따라 다르며, 빠르면 2~3일 늦으면 2주 이상<br>
+                            소요될 수 있습니다. A/S는 수작업인 요소가 있어 기간에 대한 자세한 안내가 어려운점 양해 부탁드립니다.</p>      
+                    </div>    
+                </div>
+            </div>
+            <!-- 상품 후기 -->
+            <div id="prodReview">
+                <h2 class="hidden">상품후기</h2>
+                <nav class="navDetail">
+                    <ul>
+                        <li><a href="#prodDetailArea">상품상세정보</a></li>
+                        <li><a href="#prodTerms">상품구매안내</a></li>
+                        <li class="focus"><a href="#prodReview">상품후기</a></li>
+                        <li><a href="#prodQnA">상품문의</a></li>
+                    </ul>
+                </nav>
+                <div class="reviewList">
+                    <p>게시물이 없습니다</p>
+                </div>
+                <a class="reviewBtn" href="#">후기작성하기</a>
+            </div>
+            <!-- 상품 문의 -->
+            <div id="prodQnA">
+                <h2 class="hidden">상품문의</h2>
+                <nav class="navDetail">
+                    <ul>
+                        <li><a href="#prodDetailArea">상품상세정보</a></li>
+                        <li><a href="#prodTerms">상품구매안내</a></li>
+                        <li><a href="#prodReview">상품후기</a></li>
+                        <li class="focus"><a href="#prodQnA">상품문의</a></li>
+                    </ul>
+                </nav>
+                <div class="qnaList">
+                    <p>게시물이 없습니다</p>
+                </div>
+                <a href="#">상품문의하기</a>
+            </div>
+        </div>
+    </div>
+    <!-- 컨텐츠 영역 종료 -->
+    <!-- 푸터 영역 시작 -->
+    <footer>
+        <div id="footArea">
+            <div id="footBoxArea">
+                <div class="footbox">
+                    <strong>customer center</strong>
+                    <p>00-000-0000~0</p>
+                    <p>영업시간 AM 10:00 - PM 5:00</p>
+                    <p>점심시간 PM 1:00 - PM 2:00</p>
+                    <p>주말, 공휴일 휴무</p>
+                </div>
+                <div class="footbox">
+                    <strong>bank info</strong>
+                    <p>예금주 조아라</p>
+                    <p>국민 458-831-453123</p>
+                    <select name="banksite">
+                        <option value="default">인터넷 뱅킹 바로가기</option>
+                        <option value="국민은행">국민은행</option>
+                        <option value="신한은행">신한은행</option>
+                        <option value="">농협</option>
+                        <option value="">기업은행</option>
+                    </select>
+                </div>
+                <div class="footbox">
+                    <strong>order tracking</strong>
+                    <p>로젠택배 (tel: 1588-9988)</p>
+                    <a href="https://www.ilogen.com/web/personal/tkSearch">배송위치 조회하기</a>
+                    <strong class="rtnex">return &amp; exchange</strong>
+                    <p>반품배송지 서울시 종로구 종로 78 미려빌딩 3층</p>
+                </div>
+                <div class="footbox">
+                    <strong>주문 메뉴</strong>
+                    <a href="#">상품 문의</a>
+                    <a href="#">상품 후기</a>
+                </div>
+            </div>
+            <div id="footsocial">
+                <a href="#"><span>유튜브</span><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><span>트위터</span><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><span>인스타그램</span><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <address>
+                <p class="footLogo">기록하다</p>
+                    <p>
+                        <strong>회사명</strong><span>주식회사 탄</span>
+                        <strong>대표</strong><span>조아라</span>
+                        <strong>주소</strong><span>서울시 종로구 종로 78 미려빌딩 3층</span>
+                    </p>
+                    <p>
+                        <strong>사업자 번호</strong><span>135-09-885492</span>
+                        <strong>통신판매번호</strong><span>제 85-21534호</span>
+                    </p>    
+                    <p>
+                        <strong>대표전화</strong><span>02-653-9956</span>
+                        <strong>개인정보보호책임자</strong><span>조아라</span>
+                        <strong>E-mail</strong><span>girokhada@girokhada.kr</span>
+                    </p>
+                </p>
+            </address>
+            <ul class="footNav">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">쇼핑몰 이용안내</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+            </ul>
+            <p class="footCopy">copyright &copy; 2023 <span>GIROKHADA.</span> all rights reserved.</p>
+        </div>
+    </footer>
+    <!-- 푸터 영역 종료 -->
+</body>
+</html>

@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* 콘텐츠 영역 시작 */
+/* 이미지 슬라이드 */
+#contentArea {
+    position: relative;
+}
+#slideArea{
+    position: relative;
+    width: 1200px;
+    height: 413px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#slideContent {
+    position: relative;
+    width: 6000px;
+}
+#slideContent .slider_image {
+    position: relative;
+    float: left;
+}
+#slideContent a img {
+    width: 1200px;
+}
+.slideBtn {
+    position: absolute;
+    top: 171px;
+    font-size: 4em;
+}
+.slideBtn a {
+    display: inline-block;
+    width: 30px;
+    height: 60px;
+    padding: 0 15px;
+    color: #555;
+}
+.slidePrev {
+    position: relative;
+    left: 80px;
+}
+.slideNext {
+    position: relative;
+    left: 1042px;
+}
+/* 배너 영역 */
+#bannerArea {
+    position: relative;
+    background-color: #f3efef;
+}
+#bannerArea ul {
+    position: relative;
+    width: 1200px;
+    height: 450px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+#bannerArea .conbanner {
+    position: relative;
+    float: left;
+    width: 320px;
+    height: 400px;
+    margin: 0 40px;
+    background-color: #fff;
+}
+#bannerArea .conbanner a {
+    display: block;
+    width: 320px;
+    height: 300px;
+    overflow: hidden;
+}
+#bannerArea .conbanner a:hover img {
+    transform: scale(1.1);
+}
+#bannerArea .conbanner a img {
+    width: 320px;
+    height: 300px;
+    transition: all 1s;
+}
+#bannerArea .conbanner strong, #bannerArea .conbanner span {
+    width: 320px;
+    text-indent: 15px;
+}
+#bannerArea .conbanner strong {
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 10px 0;
+    
+    font-family: "NanumSquareNeoBold";
+}
+#bannerArea .conbanner span {
+    display: inline-block;
+    font-size: 1.1em;
+}
+/* 상품 전체 영역 */
+.prod {
+    position: relative;
+    width: 1200px;
+    height: 440px;
+    margin: 0 auto;
+}
+.prod h2 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-family: "NanumSquareNeoExtraBold";
+    width: 200px;
+    text-align: center;
+    left: 50%;
+    margin-left: -100px;
+    padding: 20px 0;
+    color: #333;
+}
+.prod ul {
+    position: relative;
+    overflow: hidden;
+}
+.prod ul li {
+    float: left;
+    width: 290px;
+    margin: 0 5px;
+}
+.prod ul li a:nth-of-type(1){
+    display: inline-block;
+    width: 250px;
+}
+.prod ul li a:nth-of-type(1) img{
+    width: 250px;
+    height: 253px;
+}
+.prod ul li a:nth-of-type(2) {
+    display: inline-block;
+    width: 250px;
+    font-size: 1.4em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+.prod ul li .originPrice {
+    color: #999;
+    padding: 5px 0;
+}
+.prod ul li .originPrice span {
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+/* 콘텐츠 영역 끝 */

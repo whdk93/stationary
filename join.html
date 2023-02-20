@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/join.css">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="https://kit.fontawesome.com/3391129e8e.js" crossorigin="anonymous"></script>
+    <title>회원가입</title>
+</head>
+<body>
+    <!-- 퀵메뉴(맨위로,홈으로,장바구니) -->
+    <div id="topMenu">
+        <a href="#head_top" class="top top1"><i class="fa-solid fa-angles-up"></i><span>top</span></a>
+        <a href="index.html" class="top top2"><i class="fa-solid fa-house"></i><span>home</span></a>
+        <a href="#" class="top top3"><i class="fa-solid fa-cart-shopping"></i><span>cart</span></a>
+    </div>
+    <!-- 퀵메뉴 영역 종료 -->
+    <!-- 헤더 영역 시작 -->
+    <header id="head_top">
+        <!-- gnb 영역 -->
+        <div id="gnb">
+            <!-- 상단메뉴 -->
+            <ul>
+                <li><a href="#">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="#">장바구니</a></li>
+                <li><a href="#">마이페이지</a></li>
+            </ul>  
+            <!-- 검색 영역 -->
+        <form action="#" method="get">
+            <fieldset>
+                <legend>검색</legend>
+                <input type="search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </fieldset>
+        </form>
+        </div>
+        <!-- 메인 배너 영역 -->
+        <div id="mainBanner">
+            <h1><a href="index.html"><img src="img/indexLogo.png" alt="sitelogo">GIROKHADA</a></h1>
+        </div>
+        <!-- 메인 메뉴 영역 -->
+        <div id="mainMenuArea">
+            <nav class="mainNav">
+                <h2>메인메뉴</h2>
+                <p><a href="">브랜드</a></p>
+                <ul class="mainMenu">
+                    <li>
+                        <a href="#">필기구</a>
+                        <ul class="subMenu sub1">
+                            <li><a href="#">만년필</a></li>
+                            <li><a href="#">볼펜</a></li>
+                            <li><a href="#">샤프</a></li>
+                            <li><a href="#">딥펜</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">잉크</a>
+                        <ul class="subMenu sub2">
+                            <li><a href="#">컬러차트</a></li>
+                            <li><a href="#">병잉크</a></li>
+                            <li><a href="#">카트리지</a></li>
+                            <li><a href="#">소분잉크</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">노트 및 잡화</a>
+                        <ul class="subMenu sub3">
+                            <li><a href="#">노트</a></li>
+                            <li><a href="#">연습지</a></li>
+                            <li><a href="#">파우치</a></li>
+                            <li><a href="#">기타</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">에디터's Pick</a>
+                        <ul class="subMenu sub4">
+                            <li><a href="#">new&amp;best</a></li>
+                            <li><a href="#">만년필 입문</a></li>
+                            <li><a href="#">금액대별 만년필</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">Q&amp;A</a></li>
+                </ul>
+            </nav>    
+        </div>
+    </header>
+    <!-- 헤더 영역 종료 -->
+    <!-- 컨텐츠 영역 시작 -->
+    <div id="contentArea">
+        <!-- 회원가입 영역 -->
+        <section id="memberArea">
+            <p class="location">home &gt; <strong>회원가입</strong></p>
+            <h2>회원 가입</h2>
+            <form action="join.jsp" method="post" id="joinForm" name="joinForm">
+                <fieldset>
+                    <legend>회원 가입 폼</legend>
+                    <h3>기본 정보</h3>
+                    <p class="requirep"><strong class="require">필수</strong>필수입력사항</p>
+                    <div id="joinInput">
+                        <p>
+                            <label for="id">아이디<strong class="require">필수</strong></label>
+                            <input type="text" name="id" id="id" required>
+                            <a class="idcheck" href="#">아이디 중복확인</a>
+                        </p>
+                        <p>
+                            <label for="password">비밀번호<strong class="require">필수</strong></label>
+                            <input type="password" name="password" id="password" required>
+                            (영문대소문자&#47;숫자 4~16자)
+                        </p>
+                        <p>
+                            <label for="pwdCheck">비밀번호 확인<strong class="require">필수</strong></label>
+                            <input type="password" id="pwdCheck" name="confirmPwd" required >
+                        </p>
+                        <p>
+                            <label for="name">이름<strong class="require">필수</strong></label>
+                            <input type="text" name="name" id="name" required >
+                        </p>
+                        <p>
+                            <label class="labelAddress" for="address">주소</label>
+                            <input id="zipcode" type="text" size="5"><a class="findZipcode"  href="#">우편번호 찾기</a>
+                            <input type="text" id="address" name="address" size="20" maxlength="100">
+                        </p>
+                        <p>
+                            <label for="text">휴대전화<strong class="require">필수</strong></label>
+                            <select name="1stnum" id="1stnum" required>
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                                <option value="016">016</option>
+                                <option value="017">017</option>
+                                <option value="018">018</option>
+                                <option value="019">019</option>
+                            </select>
+                            &#45;
+                            <input type="text" maxlength="6" size="3" required>
+                            &#45;
+                            <input type="text" maxlength="6" size="3" required>
+                        </p>
+                        <p>
+                            <label for="email">이메일<strong class="require">필수</strong></label>
+                            <input type="email" name="email" id="email" size="20" required>
+                        </p>    
+                    </div>
+                    <div id="joinBtnArea">
+                        <button class="joinSubmit joinbtn" type="submit">회원가입</button>
+                        <button class="joinReset joinbtn" type="reset">취소</button>
+                    </div>
+                </fieldset>
+            </form>
+    </section>
+    </div>
+    <!-- 컨텐츠 영역 종료 -->
+    <!-- 푸터 영역 시작 -->
+    <footer>
+        <div id="footArea">
+            <div id="footBoxArea">
+                <div class="footbox">
+                    <strong>customer center</strong>
+                    <p>00-000-0000~0</p>
+                    <p>영업시간 AM 10:00 - PM 5:00</p>
+                    <p>점심시간 PM 1:00 - PM 2:00</p>
+                    <p>주말, 공휴일 휴무</p>
+                </div>
+                <div class="footbox">
+                    <strong>bank info</strong>
+                    <p>예금주 조아라</p>
+                    <p>국민 458-831-453123</p>
+                    <select name="banksite">
+                        <option value="default">인터넷 뱅킹 바로가기</option>
+                        <option value="국민은행">국민은행</option>
+                        <option value="신한은행">신한은행</option>
+                        <option value="">농협</option>
+                        <option value="">기업은행</option>
+                    </select>
+                </div>
+                <div class="footbox">
+                    <strong>order tracking</strong>
+                    <p>로젠택배 (tel: 1588-9988)</p>
+                    <a href="https://www.ilogen.com/web/personal/tkSearch">배송위치 조회하기</a>
+                    <strong class="rtnex">return &amp; exchange</strong>
+                    <p>반품배송지 서울시 종로구 종로 78 미려빌딩 3층</p>
+                </div>
+                <div class="footbox">
+                    <strong>주문 메뉴</strong>
+                    <a href="#">상품 문의</a>
+                    <a href="#">상품 후기</a>
+                </div>
+            </div>
+            <div id="footsocial">
+                <a href="#"><span>유튜브</span><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><span>트위터</span><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><span>인스타그램</span><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <address>
+                <p class="footLogo">기록하다</p>
+                    <p>
+                        <strong>회사명</strong><span>주식회사 탄</span>
+                        <strong>대표</strong><span>조아라</span>
+                        <strong>주소</strong><span>서울시 종로구 종로 78 미려빌딩 3층</span>
+                    </p>
+                    <p>
+                        <strong>사업자 번호</strong><span>135-09-885492</span>
+                        <strong>통신판매번호</strong><span>제 85-21534호</span>
+                    </p>    
+                    <p>
+                        <strong>대표전화</strong><span>02-653-9956</span>
+                        <strong>개인정보보호책임자</strong><span>조아라</span>
+                        <strong>E-mail</strong><span>girokhada@girokhada.kr</span>
+                    </p>
+                </p>
+            </address>
+            <ul class="footNav">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">쇼핑몰 이용안내</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+            </ul>
+            <p class="footCopy">copyright &copy; 2023 <span>GIROKHADA.</span> all rights reserved.</p>
+        </div>
+    </footer>
+    <!-- 푸터 영역 종료 -->
+</body>
+</html>

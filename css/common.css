@@ -1,0 +1,472 @@
+@charset "utf-8";
+/* 초기화 */
+html, body, div, header, nav, section, aside, article, footer, figure, 
+figcaption, fieldset, legend, ul, ol, li, dl, dt, dd, h1, h2, h3, p{
+    margin: 0;
+    padding: 0;
+}
+span, a, strong {
+    font-style: normal;
+    font-weight: normal;
+}
+ul {
+    list-style: none;
+}
+fieldset {
+    border: none;
+}
+/* 숨김 콘텐츠 */
+.hidden, legend, caption {
+    position: absolute;
+    left: -9999px;
+}
+/* 전체 기본 스타일 */
+/* 웹 폰트 */
+@font-face {
+    font-family: "Nanum";
+    font-weight: 400;
+    src: url("font/NanumGothic.eot?#iefix")format("embedded-opentype"),
+    url("font/NanumGothic.woff")format("woff"),
+    url("font/NanumGothic.ttf")format("truetype");
+}
+@font-face {
+    font-family: "NanumBold";
+    font-weight: 600;
+    src: url("font/NanumGothicBold.eot?#iefix?#iefix")format("embedded-opentype"),
+    url("font/NanumGothicBold.woff")format("woff"),
+    url("font/NanumGothicBold.ttf")format("truetype");
+}
+@font-face {
+    font-family: "NanumEx";
+    font-weight: 900;
+    src: url("font/NanumGothicExtraBold.eot?#iefix")format("embedded-opentype"),
+    url("font/NanumGothicExtraBold.woff")format("woff"),
+    url("font/NanumGothicExtraBold.ttf")format("truetype");
+}
+@font-face {
+    font-family: "NanumSquareNeo";
+    src: url("font/NanumSquareNeo-bRg.ttf")format("truetype");
+}
+@font-face {
+    font-family: "NanumSquareNeoBold";
+    src: url("font/NanumSquareNeo-cBd.ttf")format("truetype");
+}
+@font-face {
+    font-family: 'NanumSquareNeoExtraBold';
+    src: url("font/NanumSquareNeo-dEb.ttf")format("truetype");
+}
+@font-face {
+    font-family: "NanumSquareNeoHeavy";
+    src: url("font/NanumSquareNeo-eHv.ttf")format("truetype");
+}
+/* 링크 스타일 */
+a:link {
+    color: #000;
+    text-decoration: none;
+}
+a:visited {
+    color: #000;
+}
+/* 기본 스타일 */
+body {
+    color: #000;
+    background-color: #fff;
+    font-size: 0.8em;
+    /* line-height: 1.2; */
+    font-family: "NanumSquareNeo";
+}
+/* 퀵메뉴 영역 */
+#quickMenu {
+    position: fixed;
+    width: 80px;
+    height: 280px;
+    top: 300px;
+    border: 1px solid #ccc;
+    text-align: center;
+    z-index: 100;
+    background-color: #fff;
+}
+.quick_prod {
+    position: absolute;
+    top: 28px;
+}
+.quick_prod a {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ccc;
+}
+.quick_prod a:last-of-type{
+    margin-top: 2px;
+}
+.quick_prod img {
+    width: 70px;
+}
+.quick_btn {
+    font-size: 2em;
+}
+.quick_btn a {
+    color: #555;
+}
+.quick_btn span {
+    display: inline-block;
+    text-indent: -100em;
+}
+.quick_up {
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+.quick_down {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+}
+/* 탑메뉴 영역 */
+#topMenu {
+    position: fixed;
+    width: 50px;
+    height: 150px;
+    top: 80%;
+    right: 10px;
+    z-index: 100;
+}
+#topMenu a {
+    display: inline-block;
+    width: 90%;
+    height: 30%;
+    margin: 1px;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    text-align: center;
+    transition: background-color 1s;
+}
+#topMenu a:hover {
+    background-color: #999;
+}
+#topMenu i {
+    margin-top: 8px;
+    font-size: 2em;
+}
+#topMenu span{
+    display: block;
+    text-indent: 100px;
+}
+/* 전체 레이아웃 */
+#content {
+    position: relative;
+}
+
+/* 헤더 영역 */
+header {
+    position: relative;
+    width : 100%;
+}
+/* gnb 영역 */
+#gnb {
+    position: relative;
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+}
+#gnb ul {
+    position: absolute;
+    width: 300px;
+    top: 1%;
+    right: 140px;
+    padding: 5px;
+}
+#gnb li {
+    height: 20px;
+    padding: 5px;
+    display: inline-block;
+}
+#gnb li :after {
+    content: "|";
+    margin-left: 10px;
+}
+#gnb li:last-of-type :after {
+    content: "";
+}
+#gnb li:hover a {
+    text-shadow: 0px 1px 1px #ccc;
+}
+/* 검색 영역 */
+#gnb form {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+#gnb form input {
+    width: 100px;
+    border: none;
+    background-color: #ccc;
+}
+#gnb form input:focus {
+    outline: none;
+}
+#gnb form button {
+    border: none;
+    background-color: #ccc;
+}
+/* 메인 배너 영역 */
+#mainBanner {
+    width: 1200px;
+    height:180px;
+    margin: 0 auto;
+}
+#mainBanner h1 {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+#mainBanner h1 a {
+    font-family: "NanumSquareNeoHeavy";
+}
+#mainBanner h1 img{
+    display: block;
+    margin: 0 auto;
+}
+/* 메인 메뉴 영역 */
+#mainMenuArea {
+    position: relative;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+#mainMenuArea .mainNav {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+#mainMenuArea h2{
+    position: absolute;
+    width: 10px;
+    height: 0;
+    white-space: nowrap;
+    text-indent: -10px;
+    overflow: hidden;
+}
+#mainMenuArea .mainNav p {
+    display: inline-block;
+    width: 14%;
+}
+#mainMenuArea .mainNav p a {
+    display: inline-block;
+    font-size: 1.3em;
+    width: 100px;
+    padding: 10px 5px;
+    text-align: center;
+}
+#mainMenuArea .mainNav p:hover a {
+    font-family: "NanumSquareNeoExtraBold";
+}
+#mainMenuArea .mainMenu {
+    position: relative;
+    display: inline-block;
+    width: 85%;
+}
+#mainMenuArea .mainMenu>li {
+    position: relative;
+    display: inline-block;
+    width: 15%;
+    font-size: 1.3em;
+    padding: 10px 5px;
+    text-align: center;
+}
+/* #mainMenuArea .mainMenu>li:hover>a {
+    font-family: "NanumSquareNeoExtraBold";
+} */
+#mainMenuArea .subMenu {
+    position: absolute;
+    width: 138px;
+    top: 39px;
+    background-color: #fff;
+    z-index: 10;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+#mainMenuArea .subMenu li {
+    position: relative;
+}
+#mainMenuArea .subMenu li:hover {
+    background-color: #eee;
+}
+#mainMenuArea .subMenu li a {
+    display: inline-block;
+    width: 138px;
+    height: 17px;
+    padding: 5px 0;
+    font-size: 0.9em;
+}
+/* 푸터 영역 */
+footer {
+    position: relative;
+}
+footer::after {
+    content: "";
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    background-color: #555;
+    left: 0;
+    bottom: -10px;
+    padding-bottom: 10px;
+}
+#footArea {
+    width: 1200px;
+    margin: 0 auto;
+}
+#footArea::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #555;
+    left: 0;
+    top: 0;
+}
+#footArea::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #555;
+    left: 0;
+    top: 190px;
+}
+/* 푸터 박스 영역 */
+#footBoxArea {
+    width: 100%;
+    position: relative;
+    height: 150px;
+    padding: 20px 0;
+}
+.footbox {
+    width: 238px;
+    height: 130px;
+    float: left;
+    line-height: 2em;
+    margin: 0 30px;
+    margin-top: 5px;
+    border-right: 1px solid #ccc;
+}
+.footbox:first-child {
+    margin-left: 0;
+}
+.footbox:nth-child(2) {
+    width: 268px;
+    margin-left: 0;
+}
+.footbox:nth-child(3) {
+    width: 298px;
+    margin-right: 0;
+    margin-left: 0;
+}
+.footbox:last-child {
+    margin-right: 0;
+    border: none;
+}
+.footbox strong {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.footbox strong, .footbox a {
+    display: block;
+    text-transform: uppercase;
+}
+.rtnex, .footbox select {
+    margin-top: 5px;
+}
+/* 푸터 소셜 영역 */
+#footsocial {
+    width: 160px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+#footsocial a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    text-align: center;
+    transition: background-color 1s;
+}
+#footsocial a:hover {
+    background-color: #999;
+}
+#footsocial i {
+    position: relative;
+    top: 25%;
+    font-size: 2em;
+}
+#footsocial a span {
+    display: inline-block;
+    text-indent: -9999px;
+}
+/* 푸터 어드레스 영역 */
+#footArea address {
+    position: relative;
+}
+#footArea address .footLogo {
+    position: relative;
+    width: 80px;
+    left: 50%;
+    margin-left: -40px;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+#footArea address p {
+    width: 600px;
+    margin: 0 auto;
+    font-style: normal;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 2px 0; 
+}
+#footArea address strong {
+    font-weight: bold;
+   margin-right: 5px;
+}
+#footArea address span {
+    margin-right: 7px;
+}
+/* 푸터 메뉴 및 카피라이트 영역 */
+.footNav {
+ position: relative;
+ margin: 20px 0;
+}
+.footNav li {
+    position: relative;
+    left: 415px;
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 1.1em;
+}
+.footNav li :after {
+    content: "|";
+    margin-left: 10px;
+}
+.footNav li:last-of-type :after {
+    content: "";
+}
+.footNav li:hover a {
+    text-shadow: 0px 1px 1px #ccc;
+}
+.footCopy {
+    position: relative;
+    left: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+    z-index: 10;
+    color: white;
+}

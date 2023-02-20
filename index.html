@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIROKHADA</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/3391129e8e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- 퀵메뉴 영역 시작 -->
+    <!-- 퀵메뉴(오늘 본 상품) -->
+    <div id="quickMenu">
+        <div class="quick_prod">
+        <a href="#"><img src="img/century_nice_lavande.jpg" alt="century lavande"></a>
+        <a href="#"><img src="img/pelikan_apatite.jpg" alt="pelikan apatite"></a>
+        <a href="#"><img src="img/sailor_overthostorm.jpg" alt="sailor over the storm"></a>
+        </div>
+        <div class="quick_btn">
+            <a href="#" class="quick_up"><i class="fa-solid fa-angle-up"></i><span>up</span></a>
+            <a href="#" class="quick_down"><i class="fa-solid fa-angle-down"></i><span>down</span></a>
+        </div>
+    </div>
+    <!-- 퀵메뉴(맨위로,홈으로,장바구니) -->
+    <div id="topMenu">
+        <a href="#head_top" class="top top1"><i class="fa-solid fa-angles-up"></i><span>top</span></a>
+        <a href="#" class="top top2"><i class="fa-solid fa-house"></i><span>home</span></a>
+        <a href="#" class="top top3"><i class="fa-solid fa-cart-shopping"></i><span>cart</span></a>
+    </div>
+    <!-- 퀵메뉴 영역 종료 -->
+    <!-- 헤더 영역 시작 -->
+    <header id="head_top">
+        <!-- gnb 영역 -->
+        <div id="gnb">
+            <!-- 상단메뉴 -->
+            <ul>
+                <li><a href="#">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="#">장바구니</a></li>
+                <li><a href="#">마이페이지</a></li>
+            </ul>  
+            <!-- 검색 영역 -->
+        <form action="#" method="get">
+            <fieldset>
+                <legend>검색</legend>
+                <input type="search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </fieldset>
+        </form>
+        </div>
+        <!-- 메인 배너 영역 -->
+        <div id="mainBanner">
+            <h1><a href="index.html"><img src="img/indexLogo.png" alt="sitelogo">GIROKHADA</a></h1>
+        </div>
+        <!-- 메인 메뉴 영역 -->
+        <div id="mainMenuArea">
+            <nav class="mainNav">
+                <h2>메인메뉴</h2>
+                <p><a href="">브랜드</a></p>
+                <ul class="mainMenu">
+                    <li>
+                        <a href="#">필기구</a>
+                        <ul class="subMenu sub1">
+                            <li><a href="#">만년필</a></li>
+                            <li><a href="#">볼펜</a></li>
+                            <li><a href="#">샤프</a></li>
+                            <li><a href="#">딥펜</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">잉크</a>
+                        <ul class="subMenu sub2">
+                            <li><a href="#">컬러차트</a></li>
+                            <li><a href="#">병잉크</a></li>
+                            <li><a href="#">카트리지</a></li>
+                            <li><a href="#">소분잉크</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">노트 및 잡화</a>
+                        <ul class="subMenu sub3">
+                            <li><a href="#">노트</a></li>
+                            <li><a href="#">연습지</a></li>
+                            <li><a href="#">파우치</a></li>
+                            <li><a href="#">기타</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">에디터's Pick</a>
+                        <ul class="subMenu sub4">
+                            <li><a href="#">new&amp;best</a></li>
+                            <li><a href="#">만년필 입문</a></li>
+                            <li><a href="#">금액대별 만년필</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">Q&amp;A</a></li>
+                </ul>
+            </nav>    
+        </div>
+    </header>
+    <!-- 헤더 영역 종료 -->
+    <!-- 컨텐츠 영역 시작 -->
+    <div id="contentArea">
+        <!-- 이미지 슬라이드 -->
+        <section id="slideArea">
+            <h2 class="hidden">상품 이미지 슬라이드</h2>
+            <ul id="slideContent">
+                <li class="slider_image"><a href="#"><img src="img/main_bluemarine.jpg" alt=""></a></li>
+                <li class="slider_image"><a href="#"><img src="img/main1_lamy_2023al.jpg" alt=""></a></li>
+                <li class="slider_image"><a href="#"><img src="img/main_pla_izumo_g.jpg" alt=""></a></li>
+            </ul> 
+            <div class="slideBtn">
+                <a class="slidePrev" href="#"><i class="fa-solid fa-chevron-left"></i></a>
+                <a class="slideNext" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </section>
+        <!-- 배너 영역 -->
+        <section id="bannerArea">
+            <h2 class="hidden">광고 배너</h2>
+            <ul>
+                <li class="conbanner banner1">
+                    <a href="#">
+                        <img src="img/mainbanner1.jpg" alt="">
+                    </a>
+                    <strong>손글씨 부문 온라인 클래스 1위!</strong>
+                    <span>화제의 미꽃체, 지금 바로 확인해보세요</span>
+                </li>
+                <li class="conbanner banner2">
+                    <a href="#">
+                        <img src="img/mainbanner2.jpg" alt="">
+                    </a>
+                    <strong>만년필 구조키트</strong>
+                    <span>만년필 초보자를 위한 필수 물품들</span>
+                </li>
+                <li class="conbanner banner3">
+                    <a href="#">
+                        <img src="img/mainbanner3.jpg" alt="">
+                    </a>
+                    <strong>호보니치, 미도리MD 등</strong>
+                    <span>만년필과 찰떡 궁합♡</span>
+                </li>
+            </ul>
+        </section>
+        <!-- 신상품 영역 -->
+        <section id="newprodArea" class="prod">
+            <h2>new arrival</h2>
+            <ul>
+                <li>
+                    <a href="product.html"><img src="img/century_nice_lavande.jpg" alt="센츄리 니스 라벤더"></a>
+                    <a href=""><p>센츄리 니스 라벤더</p></a>
+                    <p class="originPrice">소비자가 :<span>300000원</span></p>
+                    <p>판매가 : 190000원</p>
+                </li>
+                <li>
+                    <a href="#"><img src="img/PK05057-ZZZ_Pelikan-Souveran-M400-Fountain-Pen-Tortoise-Shell-White-Gold-Cap_P1.jpg" alt=""></a>
+                    <a href=""><p>M400 쉘 화이트</p></a>
+                    <p class="originPrice">소비자가 :<span>350000원</span></p>
+                    <p>판매가 : 350000원</p>
+                </li>
+                <li>
+                    <a href="#"><img src="img/SR86861_Sailor-Shikiori-Sound-of-Rain-Fountain-Pen-Winter-Rain-Medium-Fine_P1.jpg" alt=""></a>
+                    <a href=""><p>시키오리-빗소리(겨울)</p></a>
+                    <p class="originPrice">소비자가 :<span>370000원</span></p>
+                    <p>판매가 : 370000원</p>
+                </li>
+                <li>
+                    <a href="#"><img src="img/au_celeste_t-1.jpg" alt=""></a>
+                    <a href=""><p>옵티마 365 셀레스트</p></a>
+                    <p class="originPrice">소비자가 :<span>1000000원</span></p>
+                    <p>판매가 : 640000원</p>
+                </li>
+            </ul>
+        </section>
+        <!-- 베스트 세일 상품 -->
+        <section id="bstprodArea" class="prod">
+            <h2>best sale</h2>
+            <ul>
+                <li>
+                    <a href="#"><img src="img/KW94240-ZZZ_Kaweco-Collection-Fountain-Pen-Iridescent-Pearl_P1.jpg" alt="카웨코 이리디센트"></a>
+                    <a href=""><p>이리디센트 펄</p></a>
+                    <p class="originPrice">소비자가 :<span>35000원</span></p>
+                    <p>판매가 : 35000원</p>
+                </li>
+                <li>
+                    <a href=""><img src="img/pelikan_apatite.jpg" alt=""></a>
+                    <a href=""><p>펠리칸 m200 아파타이트</p></a>
+                    <p class="originPrice">소비자가 :<span>200000원</span></p>
+                    <p>판매가 : 48800원</p>
+                </li>
+                <li>
+                    <a href="#"><img src="img/platinum_prefounte_t-1.jpg" alt=""></a>
+                    <a href=""><p>플래티넘 프리폰테</p></a>
+                    <p class="originPrice">소비자가 :<span>10500원</span></p>
+                    <p>판매가 : 7300원</p>
+                </li>
+                <li>
+                    <a href=""><img src="img/TW00003-ZZZ_TWSBI-Eco-Fountain-Pen-Glow-Purple_P1.jpg" alt=""></a>
+                    <a href=""><p>트위스비 에코 펄 퍼플</p></a>
+                    <p class="originPrice">소비자가 :<span>48800원</span></p>
+                    <p>판매가 : 48800원</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <!-- 컨텐츠 영역 종료 -->
+    <!-- 푸터 영역 시작 -->
+    <footer>
+        <div id="footArea">
+            <div id="footBoxArea">
+                <div class="footbox">
+                    <strong>customer center</strong>
+                    <p>00-000-0000~0</p>
+                    <p>영업시간 AM 10:00 - PM 5:00</p>
+                    <p>점심시간 PM 1:00 - PM 2:00</p>
+                    <p>주말, 공휴일 휴무</p>
+                </div>
+                <div class="footbox">
+                    <strong>bank info</strong>
+                    <p>예금주 조아라</p>
+                    <p>국민 458-831-453123</p>
+                    <select name="banksite">
+                        <option value="default">인터넷 뱅킹 바로가기</option>
+                        <option value="국민은행">국민은행</option>
+                        <option value="신한은행">신한은행</option>
+                        <option value="">농협</option>
+                        <option value="">기업은행</option>
+                    </select>
+                </div>
+                <div class="footbox">
+                    <strong>order tracking</strong>
+                    <p>로젠택배 (tel: 1588-9988)</p>
+                    <a href="https://www.ilogen.com/web/personal/tkSearch">배송위치 조회하기</a>
+                    <strong class="rtnex">return &amp; exchange</strong>
+                    <p>반품배송지 서울시 종로구 종로 78 미려빌딩 3층</p>
+                </div>
+                <div class="footbox">
+                    <strong>주문 메뉴</strong>
+                    <a href="#">상품 문의</a>
+                    <a href="#">상품 후기</a>
+                </div>
+            </div>
+            <div id="footsocial">
+                <a href="#"><span>유튜브</span><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><span>트위터</span><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><span>인스타그램</span><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <address>
+                <p class="footLogo">기록하다</p>
+                    <p>
+                        <strong>회사명</strong><span>주식회사 탄</span>
+                        <strong>대표</strong><span>조아라</span>
+                        <strong>주소</strong><span>서울시 종로구 종로 78 미려빌딩 3층</span>
+                    </p>
+                    <p>
+                        <strong>사업자 번호</strong><span>135-09-885492</span>
+                        <strong>통신판매번호</strong><span>제 85-21534호</span>
+                    </p>    
+                    <p>
+                        <strong>대표전화</strong><span>02-653-9956</span>
+                        <strong>개인정보보호책임자</strong><span>조아라</span>
+                        <strong>E-mail</strong><span>girokhada@girokhada.kr</span>
+                    </p>
+                </p>
+            </address>
+            <ul class="footNav">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">쇼핑몰 이용안내</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+            </ul>
+            <p class="footCopy">copyright &copy; 2023 <span>GIROKHADA.</span> all rights reserved.</p>
+        </div>
+    </footer>
+    <!-- 푸터 영역 종료 -->
+</body>
+</html>

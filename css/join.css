@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* 메인 컨텐츠 영역 */
+#contentArea {
+    position: relative;
+}
+/* 회원가입 영역 */
+#memberArea {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+.location {
+    position: relative;
+    height : 15px;
+    line-height: 15px;
+    text-align: right;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.location strong {
+    font-weight: bold;
+}
+#memberArea h2 {
+    position: relative;
+    height: 29px;
+    font-size: 1.3em;
+    border-bottom: 1px solid #ccc;
+    text-indent: 15px;
+}
+#memberArea h2:before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 16px;
+    top: 2px;
+    left: 2px;
+    background-color: #555;
+    border-radius: 5px;
+}
+/* 회원가입 폼 영역 */
+#joinForm {
+    position: relative;
+    margin-top: 20px;
+}
+#joinForm h3 {
+    position: absolute;
+    top: 0;
+    font-size: 1.3em;
+}
+#joinForm .requirep {
+    font-size: 0.9em;
+    height: 30px;
+    line-height: 15px;
+    text-align: right;
+}
+#joinForm .require {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    white-space: nowrap;
+    text-indent: 10px;
+    overflow: hidden;
+}
+#joinForm .require::before {
+    content: "*";
+    position: relative;
+    top: -1px;
+    left: -10px;
+    font-weight: bold;
+    color: red;
+}
+#joinInput {
+    position: relative;
+}
+#joinInput p {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+#joinInput p:first-of-type {
+    border-top: 2px solid #ccc;
+}
+#joinInput label {
+    display: inline-block;
+    width: 100px;
+    padding: 15px 20px; 
+    margin-right: 10px;
+    background-color: #fafafa;
+}
+#joinInput label strong {
+    margin-left: 3px;
+}
+#joinInput p input {
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 0;   
+}
+#id,#password,#pwdCheck,#name {
+    width: 100px;
+}
+#joinInput input:focus {
+    outline: none;
+}
+#joinInput .idcheck, #joinInput .findZipcode {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 5px 3px;
+    background-color: #7a7a7a;
+    margin-left: 5px;
+    color: #fafafa;
+    text-shadow: 1px 1px 2px #000;
+}
+#joinInput #address  {
+    position: absolute;
+    display: block;
+    bottom: 15px;
+    left: 153px;
+    width: 400px;
+}
+.labelAddress {
+    height: 60px;
+}
+/* 회원가입 버튼 영역 */
+#joinBtnArea {
+    position: relative;
+    padding: 20px 0;
+    text-align: center;
+}
+#joinBtnArea .joinbtn {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    border: 1px solid #222;
+    border-radius: 2px;
+    background-color: #5a5a5a;
+    color: #fafafa;
+    text-shadow: 1px 1px 1px #222, -1px -1px 1px #222;
+    font-size: 1.2em;
+    cursor: pointer;  
+}
+#joinBtnArea .joinSubmit {
+    margin-right: 10px;
+}
+/* 회원가입 폼 영역 종료 */
