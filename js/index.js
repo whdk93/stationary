@@ -3,7 +3,9 @@ $(function () {
     $('#slideContent').append($('.slider_image').first().clone());
     $('#slideContent').prepend($('.slider_image').eq(-2).clone());
     let index=1;
+    let autoslider;
     moveSlider(index);
+    autoslide();
     // 좌측 버튼 클릭 이벤트
     $('.slidePrev').click(function () {
         if(index > 1) {
@@ -21,18 +23,35 @@ $(function () {
             index++;
             moveSlider(index);
         }else {
-            $('#slideContent').css('left',0); // animate되어서 들어오는데 흰화면 보임
-            // left를 0으로 하면 그냥 이미지가 떠버려서 slide가 안됨
+            $('#slideContent').css('left',0);
             index=1;
             moveSlider(index);
         }
     });
-    setInterval(()=>{
-        $('.right_control').trigger('click');
-    },3000)
+    // 자동 슬라이드
+    function autoslide() {
+        autoslider=setInterval(()=>{
+            $('.slideNext').trigger('click');
+        },5000);
+    }   
+    // 이미지 슬라이더
     function moveSlider (index) {
         $('#slideContent').animate({
             left : -(index*1200)
         },'slow');
     }
+    // 호버 시 정지
+    $('#slideContent').hover(function () {
+        clearInterval(autoslider);
+    }, function () {
+        autoslide();
+    });
+    // 슬라이드 버튼 이벤트 
+    $('.slideBtn a').each(function () {
+        $(this).hover(function() {
+            $(this).css('border','1px solid #666');
+        }, function () {
+            $(this).css('border','none');
+        })
+    });
 });

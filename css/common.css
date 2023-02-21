@@ -294,9 +294,6 @@ header {
 #mainMenuArea .subMenu li {
     position: relative;
 }
-#mainMenuArea .subMenu li:hover {
-    background-color: #eee;
-}
 #mainMenuArea .subMenu li a {
     display: inline-block;
     width: 138px;
