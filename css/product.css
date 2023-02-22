@@ -18,7 +18,8 @@
 /* 상품 디테일 옵션 영역 시작 */
 #prodOptionArea {
     overflow: hidden;
-    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    /* border-bottom: 1px solid #ccc; */
 }
 .location {
     position: relative;
@@ -68,60 +69,89 @@
     color: #ccc;
     text-decoration: line-through;
 }
+#tipsize {
+    width: 100px;
+}
 /* 주문 상품 체크 영역 */
 #orderList {
     position: relative;
 }
-#orderList .orderprod {
-    overflow: hidden;
+#orderList .orderBox {
+    position: relative;
 }
+ .pNameBox {
+    overflow: hidden;
+    height: 20px;
+}
+
 #orderList .delete {
     float: right;
-    margin-bottom: 20px;
     width: 25px;
     height: 25px;
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
     cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
 }
+
 #orderList .orderListDetail {
-    overflow: hidden;
-    margin-bottom: 20px;
+    position: relative;
+    margin: 5px 0 15px;  
+    overflow: hidden;  
 }
-#orderList .orderListDetail input {
+#quantity {
+    width: 20px;
+    text-align: center;
     margin-right: 10px;
 }
-#orderList .orderListDetail button {
-    width: 25px;
-    height: 25px;
+#orderList .olBtn {
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    padding: 2px 1px;
+    text-align: center;
     background-color: #f5f5f5;
     border: 1px solid #ccc;
     margin-right: 5px;
 }
-#orderList .orderListDetail span{
+#orderList .pPrice{
     float: right;
 }
-#orderList p {
-    text-align: right;
+.prodInfo .totalPrice {
+    padding-top: 20px;
+    height: 50px;
+    font-size: 1.5em;
+    border-top: 1px solid #ccc;
+    overflow: hidden;
 }
-#orderList p span {
-    display: inline-block;
-    padding: 20px 0;
-    margin-left: 20px;
-    font-size: 1.3em;
+.prodInfo .tPrice {
+    float: right;
 }
-.orderbtn {
-    margin-bottom: 20px;
+.orderBtnArea {
+    text-align: center;
+    overflow: hidden;
 }
-.orderbtn button {
-    width: 30%;
+.orderBtnArea button {
+    float: left;
+    width: 45%;
     height: 40px;
-    margin-left: 10px;
     cursor: pointer;
-    background: linear-gradient(to bottom,#555 50%,#7a7a7a);
-    color: white;
-    border: 1px solid;
-    border-radius: 5px;
+    background-color: #eee;
+    border: 1px solid #999;
+    margin-left: 8px;
+}
+.orderBtnArea button:first-of-type {
+    width: 92%;
+    margin-bottom: 5px;
+    color: #eee;
+    background-color: #354568;
+}
+.orderBtnArea .buynow:hover {
+    color: #08225c;
+    background-color: #ffffff;    
+}
+.orderBtnArea .smllbtn:hover {
+    color: #eee;
+    background-color: #fc9a2a;
 }
 /* 상품 디테일 옵션 영역 종료 */
 /* 상품 정보 영역 시작*/
@@ -178,6 +208,17 @@
     line-height: 1.8em;
 }
 /* 상품구매안내 영역 종료 */
+#prodDetailArea .listbtn {
+    position: relative;
+    margin-left: 1100px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border-radius: 2px;
+    padding: 5px 3px;
+    background-color: #eee;
+    border: 1px solid #999;
+    font-family: "Nanum";    
+}
 /* 상품후기 영역 시작 */
 #prodReview {
     position: relative;
@@ -190,17 +231,17 @@
     padding: 20px 0;
     border: 1px solid #555;
 }
-#prodReview .reviewBtn {
+/* #prodReview .reviewBtn {
     position: relative;
     margin-left: 1100px;
     margin-bottom: 10px;
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 5px 3px;
     background: linear-gradient(to bottom,#555 50%,#7a7a7a);
     color: white;
     font-family: "Nanum";
-}
+} */
 /* 상품후기 영역 종료 */
 
 /* 상품문의 영역 시작 */
@@ -215,7 +256,7 @@
     padding: 20px 0;
     border: 1px solid #555;
 }
-#prodQnA>a {
+/* #prodQnA>a {
     position: relative;
     margin-left: 1100px;
     margin-bottom: 10px;
@@ -224,5 +265,5 @@
     padding: 5px 3px;
     background: linear-gradient(to bottom, #555 50%,#7a7a7a);
     color: #fff;  
-}
+} */
 /* 상품문의 영역 종료 */

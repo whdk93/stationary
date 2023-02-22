@@ -36,11 +36,11 @@
 }
 .slidePrev {
     position: relative;
-    left: 80px;
+    left: 40px;
 }
 .slideNext {
-    position: relative;
-    left: 1042px;
+    position: absolute;
+    left: 1100px;
 }
 /* 배너 영역 */
 #bannerArea {
@@ -97,6 +97,7 @@
     width: 1200px;
     height: 440px;
     margin: 0 auto;
+    margin-top: 50px;
 }
 .prod h2 {
     position: relative;
@@ -107,6 +108,7 @@
     text-align: center;
     left: 50%;
     margin-left: -100px;
+    margin-bottom: 50px;
     padding: 20px 0;
     color: #333;
 }
@@ -118,6 +120,15 @@
     float: left;
     width: 290px;
     margin: 0 5px;
+}
+.scaleLink {
+    overflow: hidden;
+}
+.scaleImg {
+    transition: all 1s;
+}
+.scaleLink:hover .scaleImg {
+    transform: scale(1.05);
 }
 .prod ul li a:nth-of-type(1){
     display: inline-block;

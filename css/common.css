@@ -43,22 +43,23 @@ fieldset {
     url("font/NanumGothicExtraBold.woff")format("woff"),
     url("font/NanumGothicExtraBold.ttf")format("truetype");
 }
-@font-face {
+/* @font-face {
     font-family: "NanumSquareNeo";
     src: url("font/NanumSquareNeo-bRg.ttf")format("truetype");
 }
+
+@font-face {
+    font-family: 'NanumSquareNeoExtraBold';
+    src: url("font/NanumSquareNeo-dEb.ttf")format("truetype");
+}*/
 @font-face {
     font-family: "NanumSquareNeoBold";
     src: url("font/NanumSquareNeo-cBd.ttf")format("truetype");
 }
 @font-face {
-    font-family: 'NanumSquareNeoExtraBold';
-    src: url("font/NanumSquareNeo-dEb.ttf")format("truetype");
-}
-@font-face {
     font-family: "NanumSquareNeoHeavy";
     src: url("font/NanumSquareNeo-eHv.ttf")format("truetype");
-}
+} 
 /* 링크 스타일 */
 a:link {
     color: #000;
@@ -73,7 +74,7 @@ body {
     background-color: #fff;
     font-size: 0.8em;
     /* line-height: 1.2; */
-    font-family: "NanumSquareNeo";
+    font-family: "Nanum";
 }
 /* 퀵메뉴 영역 */
 #quickMenu {
@@ -188,9 +189,6 @@ header {
 #gnb li:last-of-type :after {
     content: "";
 }
-#gnb li:hover a {
-    text-shadow: 0px 1px 1px #ccc;
-}
 /* 검색 영역 */
 #gnb form {
     position: absolute;
@@ -263,10 +261,11 @@ header {
     text-align: center;
 }
 #mainMenuArea .mainNav p:hover a {
-    font-family: "NanumSquareNeoExtraBold";
+    font-weight: bold;
 }
 #mainMenuArea .mainMenu {
     position: relative;
+    left: 9px;
     display: inline-block;
     width: 85%;
 }
@@ -275,16 +274,16 @@ header {
     display: inline-block;
     width: 15%;
     font-size: 1.3em;
-    padding: 10px 5px;
+    padding: 10px 6px;
     text-align: center;
 }
-/* #mainMenuArea .mainMenu>li:hover>a {
-    font-family: "NanumSquareNeoExtraBold";
-} */
+#mainMenuArea .mainMenu>li:hover>a {
+    font-weight: bold;
+}
 #mainMenuArea .subMenu {
     position: absolute;
     width: 138px;
-    top: 39px;
+    top: 40px;
     background-color: #fff;
     z-index: 10;
     padding: 10px;
@@ -304,6 +303,7 @@ header {
 /* 푸터 영역 */
 footer {
     position: relative;
+    margin-top: 50px;
 }
 footer::after {
     content: "";
@@ -454,9 +454,6 @@ footer::after {
 }
 .footNav li:last-of-type :after {
     content: "";
-}
-.footNav li:hover a {
-    text-shadow: 0px 1px 1px #ccc;
 }
 .footCopy {
     position: relative;

@@ -28,19 +28,19 @@ $(function () {
             moveSlider(index);
         }
     });
-    // 자동 슬라이드
-    function autoslide() {
-        autoslider=setInterval(()=>{
-            $('.slideNext').trigger('click');
-        },5000);
-    }   
     // 이미지 슬라이더
     function moveSlider (index) {
         $('#slideContent').animate({
             left : -(index*1200)
         },'slow');
     }
-    // 호버 시 정지
+    // 자동 슬라이드
+    function autoslide() {
+        autoslider=setInterval(()=>{
+            $('.slideNext').trigger('click');
+        },5000);
+    }   
+    // 슬라이드에 호버 시 정지
     $('#slideContent').hover(function () {
         clearInterval(autoslider);
     }, function () {

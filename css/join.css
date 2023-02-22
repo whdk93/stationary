@@ -103,13 +103,13 @@
 #joinInput .idcheck, #joinInput .findZipcode {
     position: relative;
     display: inline-block;
-    border: 1px solid #555;
-    border-radius: 5px;
-    padding: 5px 3px;
-    background-color: #7a7a7a;
+    border-radius: 2px;
+    padding: 5px 5px;
+    background-color: #eee;
+    border: 1px solid #999;
     margin-left: 5px;
-    color: #fafafa;
-    text-shadow: 1px 1px 2px #000;
+    /* text-shadow: 1px 1px 1px #ddd; */
+    font-size: 12px;
 }
 #joinInput #address  {
     position: absolute;
@@ -131,13 +131,17 @@
     display: inline-block;
     width: 100px;
     height: 35px;
-    border: 1px solid #222;
     border-radius: 2px;
-    background-color: #5a5a5a;
-    color: #fafafa;
-    text-shadow: 1px 1px 1px #222, -1px -1px 1px #222;
+    border: 1px solid #999;
+    color: #eee;
+    background-color: #354568;
+    /* text-shadow: 1px 1px 1px #222, -1px -1px 1px #222; */
     font-size: 1.2em;
     cursor: pointer;  
+}
+#joinBtnArea .joinbtn:hover {
+    color: #08225c;
+    background-color: #ffffff;   
 }
 #joinBtnArea .joinSubmit {
     margin-right: 10px;
